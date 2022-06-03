@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: #353b41 !important;
+    font-family: 'Poppins', sans-serif !important;
+    color: white !important;
+}
+
+.logo{
+    height: 55px;
+}
+
+.navbar {
+    position: sticky !important;
+    top: 0px;
+    background-color: #2a2f36 !important;
+    z-index: 5;
+}
+
+
+
+#navbarNav li{
+    margin: 0 15px;
+}
+
+#navbarNav .nav-link{
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+}
+
+#navbarNav .nav-link:hover{
+    color: #df5343;
+    
+}
+
+/* HOME SECTION */
+
+#home{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.home{
+    align-items: center;
+}
+.home-content h1{
+    font-size: 4.5rem;
+    color: white;
+}
+
+.home-content h3{
+    margin: 18px 0;
+}
+
+.home-content .name{
+    color: #ff6250;
+}
+
+.home-content .pitch{
+    max-width: 87%;
+}
+
+.pitch span{
+    color: #ff6250;
+}
+
+.hire-btn{
+    background-color: #ff6250;
+    outline: none;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 3px 20px;
+    border-radius: 8px;
+    transition: 0.3s ;
+}
+
+.hire-btn:hover{
+    transform: translate(0, -5px);
+}
+
+.my-img{
+    max-width: 80%;
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+/* about  section */
+.abt-section{
+    background-color: #2a2f36;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.grid-img{
+    max-width: 40rem !important;
+    
+    transition: all 0.3s;
+}
+
+.grid-img:hover{
+    transform: scale(1.1);
+}
+
+.abt-content h1{
+    font-weight: 600;
+    color: #ff6250;
+    
+}
+.abt-lines{
+    width: 70%;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem ;
+    
+}
+
+/* Project section */
+.project-sec h1{
+    color: #ff6250;
+}
+.project-sec p{
+    font-size: 22px;
+    margin-top: 8px;
+}
+
+.project-sec a{
+    text-decoration: none;
+    color:white;
+}
+.project-sec a:hover{
+    color: #ff6250;
+    transition: 0.3s;
+    
+}
+.project-img{
+    width: 35rem;
+    border-radius: 15px;
+}
+.project-card{
+    transition: 0.3s;
+}
+.project-card:hover{
+    transform: translate(0, -5px);
+}
+.last-section{
+    padding: 5rem 0;
+    background-color: #2a2f36;
+}
+/* Inquiry Section */
+.inquiry-section{
+    display: flex;
+    justify-content: center;
+    
+    padding-top: 3rem !important;
+}
+.inquiry-section .content{
+    background-color: white;
+    display: flex;    
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    padding: 3rem;
+    width: 65%;
+}
+.inquiry-section .content .text{
+    color: black;
+    text-align: left;
+}
+
+/* footer section */
+footer{
+    text-align: center;
+    
+    padding:2rem 0 ;
+}
+footer h2{
+    color: #ff6250;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    color: #ff6250;
+    transition: 0.3s;
+}
+footer i{
+    font-size: 26px;
+}
+footer .links{
+    margin: 2rem;
+}
+footer .icons a{
+    margin: 0 8px;
+}
+
+/* media queries */
+
+@media screen and (max-width:1400px) {
+    .grid-img , .project-img{
+        width: 29rem;
+    } 
+}
+
+@media screen and (max-width:1025px) {
+    .logo {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width:1025px) and (min-width:769px) {
+    .grid-img , .project-img{
+        width: 21rem;
+    }
+    .inquiry-section .content {
+        padding: 2rem;
+        width: 80%;
+    }
+    #navbarNav .nav-link {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:769px) and (min-width:426px) {
+    .home-content h1{
+        font-size: 3.5rem;
+    }
+    .grid-img {
+        width: 23rem;
+    }
+    .abt-lines{
+        width: 90%;
+    }
+    .project-img{
+        width: 16rem;
+    }
+    .inquiry-section .content{
+        padding: 2rem;
+    width: 97%;
+
+    }
+}
+
+@media screen and (max-width:426px) and (min-width:321px){
+    .hire-btn{
+        font-size: 17px;
+    }
+    #home {
+        margin: 2rem 0 !important;
+    }
+    .my-img{
+        width: 17rem;
+    }
+    .home-content h1{
+        font-size: 2.5rem;
+    }
+    .home-content h3{
+        margin-bottom: 6px;
+    }
+    .grid-img{
+        width:20rem;
+    }
+    .project-img{
+        width: 15rem;
+    }
+
+    .project-sec p{
+        font-size: 15px;
+    }
+    .abt-section{
+        padding: 2rem 12px;
+    }
+    .abt-lines{
+        width: 100%;
+        font-size: 14px;
+    }
+    .project-sec{
+        margin: 0 !important;
+        
+    }
+    .inquiry-section .content{
+        display: block;
+        padding: 20px;
+        width: 100%;
+        text-align: left;
+    }
+    footer{
+        padding: 0;
+    }
+    .last-section{
+        padding: 1rem 0;
+    }
+}
+
+
+@media screen and (max-width:321px )  {
+    #home {
+        margin: 25px 0;
+    }
+    #home h1{
+        font-size: 2.5rem;
+    }
+    .home-content {
+        margin-bottom: 15px;
+    }
+    .home-content h3 {
+        margin: 11px 0;
+        font-size: 17px;
+    }
+    .pitch  , .abt-lines{
+        font-size: 13px;
+        width: 100%;
+    }
+    .grid-img , .project-img , .my-img {
+        width: 15rem;
+    }
+    .grid-img {
+        width: 17rem;
+    }
+    .abt-section{
+        padding: 2rem 12px;
+    }
+    .abt-content {
+        margin-top: 18px;
+    }
+    .project-sec p {
+        font-size: 17px;
+        margin-top: 8px;
+    }
+    .inquiry-section .content{
+        display: block;
+        padding: 1rem;
+        width: 100%;
+    }
+    .last-section {
+        padding: 1rem;
+    }
+    
+}
+
+
